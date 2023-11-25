@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    padding: 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+header nav ul li a:active {
+    color: black;
+    font-weight: 900;
+    border-bottom: #e6bd43 2px solid;
+}
+
+.btn, button {
+    border: 2px solid #e6bd43;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: #e6bd43;
+}
+
+.btn:hover, button:hover, #btn-about:hover {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+.btn, #btn-about, a:hover {
+    cursor: pointer;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    color: black;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#intro {
+    background-image: url("https://www.urbansplash.co.uk/images/placeholder-16-9.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#intro p {
+    width: 50%;
+    line-height: 1.5;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+#startinfo {
+    text-align: center;
+    padding: 100px 200px;
+}
+
+#startinfo p {
+    line-height: 1.5;
+    margin: auto;
+}
+
+#about {
+    background-color: #e6bd43;
+    padding: 50px 200px;
+    display: block;
+    overflow: auto;
+}
+
+#about p {
+    margin-bottom: 40px;
+}
+
+
+#btn-about {
+    border: 2px solid #000000;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+.text-box {
+    margin-top: 50px;
+    width: 80%;
+}
+
+#about h3 {
+    padding: 20px 0;
+}
+
+#about img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 50px;
+    float: left;
+}
+
+#services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+#grid {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 70px;
+}
+
+.service-box-grid {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+}
+
+.service-box-grid h3 {
+    padding: 10px 0;
+}
+
+#newsletter {
+    background-color: #F3F0F1;
+    padding: 4rem;
+    text-align: center;
+
+}
+
+form input {
+    border: none;
+    padding: 15px 15px;
+}
+
+form button {
+    padding: 13px 15px;
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/* ABOUT PAGE */
+
+.about-hoved img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.about-text {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    line-height: 1.8;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 600px;
+    padding: 30px 20px;
+}
+
+.about-text p{
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    margin: 10px 0;
+}
+
+#service-box-grid i {
+    font-size: 30px;
+}
+
+#service-box-grid h3 {
+    margin: 10px 0;
+}
+
+.clients{
+    background-color: #e6bd43;
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.clients ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.clients h2 {
+    padding-bottom: 20px;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f2f0f0;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: start;
+    padding: 50px 200px;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.8;
+}
+
+.contact-info form input {
+    background-color: #fff;
+    border: none;
+    padding: 15px 15px;
+}
+
+.contact-info form button {
+    margin-top: 8px;
+    width: 200px;
+}
+
+.contact-info form textarea {
+    border: none;
+}
+.contact-info form label {
+    padding: 10px 0;
+}
+
+.contact-info h3 {
+    padding-bottom: 10px;
+}
+
+.contact-info1 {
+    line-height: 1.5;
+}
+
+.contact-info1 ul li i {
+    font-size: 18px;
+    margin-right: 25px;
+    line-height: 2;
+}
+
+/** MEDIA QUERIES
+
+@media screen and (max-width: 550px) {
+
+    body {
+    endre str på skriften? 
+    }
+
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        NB kanskje legge til en margin hvis de er hvor små.
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
