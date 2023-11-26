@@ -67,12 +67,13 @@ a:visited {
 
 h1 {
     font-weight: 900;
-    font-size: 45px;
+    font-size: 55px;
     margin: 0;
     margin-bottom: 20px;
 }
 
 h2 {
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -313,6 +314,46 @@ footer ul li{
     padding: 150px 0;
 }
 
+.port-h2 {
+    padding: 20px 0;
+    border-bottom: #e6bd43 3px solid;;
+}
+
+#explore {
+    margin: 20px 40px;
+}
+
+#previous ul li {
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.btn-portfolio {
+    border: 1px solid #000000;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.btn-portfolio:hover {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #e6bd43;
+
+}
+
+#design {
+    margin: 20px 40px;
+}
+
+#design-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.design-box {
+    margin: 0;
+}
 
 
 
