@@ -330,7 +330,7 @@ footer ul li{
 }
 
 .btn-portfolio {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     padding: 10px 15px;
     margin-right: 20px;
 }
@@ -359,6 +359,7 @@ footer ul li{
     height: 100%;
     object-fit: cover;
 }
+
 #dev {
     margin: 20px 40px;
 }
@@ -377,6 +378,33 @@ footer ul li{
     object-fit: cover;
 }
 
+#branding {
+    margin: 20px 40px;
+}
+
+#branding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+    margin: 40px 0;
+}
+
+#branding-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#item4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1 / 3;
+}
+
+#branding-grid article:hover {
+    transform: scale(1.1);
+}
 
 
 /** MEDIA QUERIES
@@ -394,7 +422,7 @@ footer ul li{
         NB kanskje legge til en margin hvis de er hvor små.
     }
 
-    .grid {
+    .grid, .design-grid, .dev-grid, .branding-grid {
         grid-template-columns: 1fr;
     }
 
