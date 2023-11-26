@@ -32,12 +32,6 @@ header nav ul li{
     margin: 10px;
 }
 
-header nav ul li a:active {
-    color: black;
-    font-weight: 900;
-    border-bottom: #e6bd43 2px solid;
-}
-
 .btn, button {
     border: 2px solid #e6bd43;
     font-weight: 700;
@@ -78,25 +72,37 @@ h2 {
     margin-bottom: 20px;
 }
 
+strong {
+    font-weight: 900;
+    border-bottom: #e6bd43 2px solid;
+}
+
+section {
+    height: auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
 /* INDEX */
-video {
+#intro video {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     opacity: 0.5;
 }
 
 #intro-text {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 150px 0;
 }
 
 #intro-text p {
-    width: 50%;
-    line-height: 1.5;
-    margin: auto;
     margin-bottom: 20px;
     padding: 15px 0;
 } 
@@ -104,11 +110,6 @@ video {
 #startinfo {
     text-align: center;
     padding: 100px 200px;
-}
-
-#startinfo p {
-    line-height: 1.5;
-    margin: auto;
 }
 
 #about {
@@ -183,50 +184,39 @@ form button {
     padding: 13px 15px;
 }
 
-footer {
-    background-color: #252525;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-footer ul li{
-    display: inline-block;
-    margin: 10px;
-    font-size: 30px;
-    padding: 10px;
-}
-
-
 /* ABOUT PAGE */
 
 .about-hoved img {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
+
 
 .about-text {
     position: absolute;
-    right: 5%;
     top: 20%;
+    right: 5%;
     line-height: 1.8;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     width: 600px;
     padding: 30px 20px;
 }
 
+.about-text::before {
+    content: '';
+    background-color: rgba(255, 255, 255), 0.5;
+}
+
 .about-text p{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about-text h3 {
     margin: 10px 0;
 }
 
-#service-box-grid i {
+.service-box-grid i {
     font-size: 30px;
 }
 
@@ -293,8 +283,8 @@ footer ul li{
     padding-bottom: 10px;
 }
 
-.contact-info1 {
-    line-height: 1.5;
+.contact-info1 p {
+    margin: 15px 0;
 }
 
 .contact-info1 ul li i {
@@ -303,22 +293,25 @@ footer ul li{
     line-height: 2;
 }
 
-/* PORTFOLIO */
-#portfolio::before {
-    content: '';
-    position: absolute;
-    background-image: url("https://www.picture-power.com/images/how-to-photograph-the-moon-header.jpeg");
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-    width: 100%;
-    height: 350px;
-}
 
-#port-h1 {
+/* PORTFOLIO */
+#portfolio {
     position: relative;
     text-align: center;
-    padding: 150px 0;
+}
+
+#portfolio h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.5;
 }
 
 .port-h2 {
@@ -411,6 +404,25 @@ footer ul li{
 
 #branding-grid article:hover {
     transform: scale(1.1);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
 }
 
 
