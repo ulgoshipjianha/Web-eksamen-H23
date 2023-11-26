@@ -242,7 +242,7 @@ footer ul li{
     padding-bottom: 20px;
 }
 
-.contact {
+#contact {
     text-align: center;
     padding-top: 50px;
     background-color: #f2f0f0;
@@ -294,6 +294,27 @@ footer ul li{
     margin-right: 25px;
     line-height: 2;
 }
+
+/* PORTFOLIO */
+#portfolio::before {
+    content: '';
+    position: absolute;
+    background-image: url("https://www.picture-power.com/images/how-to-photograph-the-moon-header.jpeg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 350px;
+}
+
+#port-h1 {
+    position: relative;
+    text-align: center;
+    padding: 150px 0;
+}
+
+
+
 
 /** MEDIA QUERIES
 
