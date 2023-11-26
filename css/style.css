@@ -62,14 +62,13 @@ a:visited {
 h1 {
     font-weight: 900;
     font-size: 55px;
-    margin: 0;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 strong {
@@ -103,13 +102,14 @@ p {
 }
 
 #intro-text p {
-    margin-bottom: 20px;
-    padding: 15px 0;
+    margin-bottom: 30px;
 } 
 
 #startinfo {
     text-align: center;
-    padding: 100px 200px;
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
 }
 
 #about {
@@ -117,6 +117,10 @@ p {
     padding: 50px 200px;
     display: block;
     overflow: auto;
+}
+
+#about h3 {
+    font-weight: 800;
 }
 
 #about p {
@@ -149,6 +153,7 @@ p {
 #services {
     text-align: center;
     padding: 50px 0;
+    margin: 30px 0;
 }
 
 
@@ -165,14 +170,13 @@ p {
 }
 
 .service-box-grid h3 {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 #newsletter {
     background-color: #F3F0F1;
-    padding: 4rem;
     text-align: center;
-
+    padding: 70px 0;
 }
 
 form input {
