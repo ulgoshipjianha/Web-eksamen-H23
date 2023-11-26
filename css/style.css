@@ -186,26 +186,24 @@ form button {
 
 /* ABOUT PAGE */
 
-.about-hoved img {
+.about-hoved {
     position: relative;
-    width: 100%;
-    height: 500px;
 }
 
+.about-hoved img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .about-text {
     position: absolute;
-    top: 20%;
-    right: 5%;
-    line-height: 1.8;
-    background-color: rgba(255, 255, 255, 0.4);
     width: 600px;
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 30px 20px;
-}
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 
-.about-text::before {
-    content: '';
-    background-color: rgba(255, 255, 255), 0.5;
 }
 
 .about-text p{
