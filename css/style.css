@@ -12,20 +12,19 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+
 header {
     padding: 1rem;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
 nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 header nav ul li{
     display: inline-block;
@@ -84,12 +83,18 @@ p {
     line-height: 1.5;
 }
 
+
 /* INDEX */
+
+#intro {
+    position: relative;
+    text-align: center;
+}
+
 #intro video {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    position: relative;
     opacity: 0.5;
 }
 
@@ -98,12 +103,12 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 #intro-text p {
     margin-bottom: 30px;
 } 
+
 
 #startinfo {
     text-align: center;
@@ -113,41 +118,34 @@ p {
 }
 
 #about {
+    display: flex;
+    flex-direction: row;
     background-color: #e6bd43;
-    padding: 50px 200px;
-    display: block;
-    overflow: auto;
+    padding: 100px;
+    margin: auto;
+}
+
+#about img {
+    margin-right: 50px;
+}
+
+.text-box {
+    padding-top: 50px;
+}
+
+#about p {
+    margin: 20px 0px 40px 0;
+    line-height: 1.8;
 }
 
 #about h3 {
     font-weight: 800;
 }
 
-#about p {
-    margin-bottom: 40px;
-}
-
-
 #btn-about {
     border: 2px solid #000000;
     padding: 10px 15px;
     font-weight: 700;
-}
-
-.text-box {
-    margin-top: 50px;
-    width: 80%;
-}
-
-#about h3 {
-    padding: 20px 0;
-}
-
-#about img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 50px;
-    float: left;
 }
 
 #services {
@@ -156,17 +154,19 @@ p {
     margin: 30px 0;
 }
 
-
 #grid {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 .service-box-grid {
     height: 150px;
     width: 250px;
     padding: 20px;
+    margin: auto;
 }
 
 .service-box-grid h3 {
@@ -226,16 +226,20 @@ form button {
     margin: 10px 0;
 }
 
-.clients{
+.clients {
     background-color: #e6bd43;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px;
+}
 
+.clients ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .clients ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 20px;
 }
 
 .clients h2 {
@@ -253,7 +257,7 @@ form button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     text-align: start;
-    padding: 50px 200px;
+    padding: 50px 150px;
 }
 
 .contact-info form {
@@ -394,7 +398,7 @@ form button {
 
 #branding-grid img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -415,6 +419,8 @@ footer {
     background-color: #252525;
     color: #fff;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
@@ -427,24 +433,116 @@ footer ul li{
     padding: 10px;
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width:700px){
+    /*body {
+        font-size: 1rem;
+    } */
 
-/** MEDIA QUERIES
-
-@media screen and (max-width: 550px) {
-
-    body {
-    endre str på skriften? 
-    }
-
-    header {
-        display:flex;
+    main {
+        display: flex;
         flex-direction: column;
-        align-items: stretch;
-        NB kanskje legge til en margin hvis de er hvor små.
     }
 
-    .grid, .design-grid, .dev-grid, .branding-grid {
-        grid-template-columns: 1fr;
+    h1 {
+        font-size: 2.5em;
     }
 
+    h2 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* INDEX */
+    #about {
+        flex-direction: column;
+        padding: 80px;
+    }
+
+    #about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-box-grid {
+        font-size: 16px;
+        height: auto;
+
+    }
+
+    /* ABOUT */
+
+    .about-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+
+    .client {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .contact-info1 {
+        width: 100%;
+    }
+
+
+    /* PORTFOLIO */
+    #branding-grid , #design-grid, #dev-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #item4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #branding-grid article:hover {
+        transform: none;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px){
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-box-grid {
+        font-size: 16px;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
 }
