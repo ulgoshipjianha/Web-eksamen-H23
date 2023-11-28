@@ -2,14 +2,12 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    max-width: 1920px;
 }
 
 body {
-    margin: 0;
     font-family: 'Merriweather', serif;
+    max-width: 1600px;
+    margin: auto;
 }
 
 
@@ -19,7 +17,6 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -36,12 +33,6 @@ header nav ul li{
     font-weight: 700;
     padding: 10px 15px;
     background-color: #e6bd43;
-}
-
-.btn:hover, button:hover, #btn-about:hover {
-    border: 2px solid #000000;
-    background-color: #000000;
-    color: #e6bd43;
 }
 
 .btn, #btn-about, a:hover {
@@ -150,23 +141,22 @@ p {
 
 #services {
     text-align: center;
-    padding: 50px 0;
-    margin: 30px 0;
+    padding: 50px;
 }
 
 #grid {
     display: flex;
-    flex-direction: row;
+    align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;;
 }
 
 
 .service-box-grid {
-    height: 150px;
+    height: 250px;
     width: 250px;
     padding: 20px;
-    margin: auto;
+    margin: 0 20px;
 }
 
 .service-box-grid h3 {
@@ -303,7 +293,6 @@ form button {
 /* PORTFOLIO */
 #portfolio {
     position: relative;
-    text-align: center;
 }
 
 #portfolio h1 {
@@ -348,42 +337,6 @@ form button {
 
 }
 
-#design {
-    margin: 20px 40px;
-}
-
-#design-grid {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    margin: 30px 0;
-}
-
-
-#design-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#dev {
-    margin: 20px 40px;
-}
-
-
-#dev-grid {
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin: 40px 0;
-}
-
-#dev-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 #branding {
     margin: 20px 40px;
 }
@@ -392,12 +345,13 @@ form button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
-    grid-row-gap: 70px;
+    grid-row-gap: 50px;
     margin: 40px 0;
 }
 
 #branding-grid img {
     width: 100%;
+    max-width: 692px;
     height: auto;
     object-fit: cover;
 }
@@ -408,10 +362,43 @@ form button {
     grid-column: 1 / 3;
 }
 
+
 #branding-grid article:hover {
     transform: scale(1.1);
 }
 
+
+#design {
+    margin: 20px 40px;
+}
+
+#design-grid {
+    display: flex;
+    gap: 50px;
+}
+
+#design-grid img {
+    width: 100%;
+    max-width: 692px;
+    height: auto;
+    object-fit: cover;
+}
+
+#dev {
+    margin: 20px 40px;
+}
+
+#dev-grid {
+    display: flex;
+    gap: 20px;
+}
+
+#dev-grid img {
+    width: 100%;
+    max-width: 692px;
+    height: auto;
+    object-fit: cover;
+}
 
 /* FOOTER */
 
@@ -435,14 +422,11 @@ footer ul li{
 
 /* MEDIA QUERIES */
 @media only screen and (max-width:700px){
-    /*body {
-        font-size: 1rem;
-    } */
-
     main {
         display: flex;
         flex-direction: column;
     }
+
 
     h1 {
         font-size: 2.5em;
@@ -545,4 +529,12 @@ footer ul li{
         max-width: 200px;
         height: auto;
     }
+}
+
+@media only screen and (min-width:1024px) {
+    .btn:hover, button:hover, #btn-about:hover {
+        border: 2px solid #000000;
+        background-color: #000000;
+        color: #e6bd43;
+    }    
 }
