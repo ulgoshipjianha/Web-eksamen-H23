@@ -390,7 +390,7 @@ form button {
 
 #dev-grid {
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
 #dev-grid img {
@@ -439,13 +439,13 @@ footer ul li{
     nav {
         font-size: 18px;
         flex-direction: column;
-        align-items: center;
     }
 
     header nav ul li {
         display: flex;
         justify-content: center;
     }
+
 
     /* INDEX */
     #about {
